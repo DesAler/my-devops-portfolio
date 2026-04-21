@@ -1,0 +1,177 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arsen Tileuken — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BLOBS -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">// AT</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#interests">Interests</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <p class="hero-tag">// Portfolio — 2026</p>
+      <h1 class="hero-name">Arsen<br>Tileuken</h1>
+      <p class="hero-title">Student Researcher · <span>AI / ML Enthusiast</span></p>
+      <div class="hero-cta">
+        <a href="#about" class="btn"><span>Explore my work ↓</span></a>
+      </div>
+    </section>
+
+    <!-- ABOUT / BIO -->
+    <section id="about">
+      <p class="section-label">// 01 — About</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="bio-grid">
+        <div>
+          <p class="bio-text">
+            I'm a first-year Information Systems student whose perspective shifted the moment I stepped into
+            <strong>AI & Prompt Engineering</strong> classes. What started as a path toward backend development
+            quickly became a fascination with the intelligence behind the systems — machine learning, large language
+            models, and data science. I believe the next decade will be shaped by people who understand both
+            <strong>mathematics and AI</strong>, and I'm building that foundation right now.
+          </p>
+          <p class="bio-text" style="margin-top:1.2rem;">
+            My mathematical background — <strong>Linear Algebra</strong> and <strong>Calculus</strong> — gives me a
+            real advantage when it comes to understanding the theory behind neural networks and optimization algorithms.
+            I'm currently transitioning my focus toward <strong>ML / AI / Data Science</strong>, driven by curiosity
+            and genuine excitement for the field.
+          </p>
+        </div>
+        <div class="bio-stats">
+          <div class="stat-card">
+            <p class="stat-label">Current Year</p>
+            <p class="stat-value">1st Year — Information Systems</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Direction</p>
+            <p class="stat-value">AI · Machine Learning · Data Science</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Mathematics</p>
+            <p class="stat-value">Linear Algebra · Calculus</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-label">Prior Background</p>
+            <p class="stat-value">Java · OOP · AI Fundamentals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="section-label">// 02 — Skills</p>
+      <h2 class="section-title">Currently Learning</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <p class="skill-name">Python</p>
+          <p class="skill-desc">Primary language for ML & data workflows. Focusing on NumPy, Pandas, and eventually PyTorch for deep learning.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width: 35%; animation-delay:.2s;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <p class="skill-name">Excel & Data Analysis</p>
+          <p class="skill-desc">Exploratory data analysis, pivot tables, and statistical summaries — a fast path to understanding data before coding models.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width: 55%; animation-delay:.4s;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <p class="skill-name">AI Fundamentals</p>
+          <p class="skill-desc">Concepts: NLP, LLM, RAG, Deep Learning, Neural Networks, Prompt Engineering. Bridging theory with application.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" style="width: 50%; animation-delay:.6s;"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests">
+      <p class="section-label">// 03 — Interests</p>
+      <h2 class="section-title">What Drives Me</h2>
+      <p class="bio-text" style="max-width:620px;">
+        My core interest lies at the intersection of <strong>mathematics and intelligent systems</strong>.
+        I'm captivated by how neural networks learn, how language models reason, and how data can be transformed
+        into real-world decisions. Beyond tech, strong fundamentals in math keep me grounded in
+        <em>why</em> algorithms work — not just how to use them.
+      </p>
+      <div class="tags">
+        <span class="tag">Large Language Models</span>
+        <span class="tag">Neural Networks</span>
+        <span class="tag">RAG Systems</span>
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Linear Algebra</span>
+        <span class="tag">Calculus</span>
+        <span class="tag">Data Science</span>
+        <span class="tag">Python Ecosystem</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <strong><span class="status-dot"></span>Arsen Tileuken</strong>
+      Student Researcher · AI &amp; ML Enthusiast<br>
+      Information Systems, Year 1
+    </div>
+    <div class="footer-right">
+      Last Deployment: <span id="deploy-date"></span><br>
+      Built with HTML &amp; CSS · GitHub Pages
+    </div>
+  </footer>
+
+  <script>
+    // Inject today's date as deployment timestamp
+    const d = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('deploy-date').textContent = d.toLocaleDateString('en-US', options);
+
+    // Fade-in sections on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section:not(.hero), .skill-card, .stat-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .6s ease, transform .6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
