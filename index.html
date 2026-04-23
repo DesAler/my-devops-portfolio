@@ -8,12 +8,11 @@
 
 <body>
 
-  <!-- BLOBS -->
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
 
-  <!-- NAV -->
+
   <nav>
     <span class="nav-logo">// AT</span>
     <ul class="nav-links">
@@ -28,7 +27,7 @@
     <!-- HERO -->
     <section class="hero" id="home">
       <p class="hero-tag">// Portfolio — 2026</p>
-      <h1 class="hero-name">Arsen<br>Tileuken</h1>
+      <h1 class="hero-name">Akarys<br>Tileuken</h1>
       <p class="hero-title">Student Researcher · <span>AI / ML Enthusiast</span></p>
       <div class="hero-cta">
         <a href="#about" class="btn"><span>Explore my work ↓</span></a>
@@ -76,7 +75,7 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
+
     <section id="skills">
       <p class="section-label">// 02 — Skills</p>
       <h2 class="section-title">Currently Learning</h2>
@@ -112,7 +111,7 @@
       </div>
     </section>
 
-    <!-- INTERESTS -->
+
     <section id="interests">
       <p class="section-label">// 03 — Interests</p>
       <h2 class="section-title">What Drives Me</h2>
@@ -137,7 +136,7 @@
 
   </main>
 
-  <!-- FOOTER -->
+
   <footer>
     <div class="footer-left">
       <strong><span class="status-dot"></span>Arsen Tileuken</strong>
@@ -151,12 +150,11 @@
   </footer>
 
   <script>
-    // Inject today's date as deployment timestamp
     const d = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     document.getElementById('deploy-date').textContent = d.toLocaleDateString('en-US', options);
 
-    // Fade-in sections on scroll
+   
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
